@@ -11,10 +11,10 @@ namespace ConsoleAppIceCream
 
         public static SizeFactory CreateSizeFactory(string factoryType)
         {
-            if (factoryType.ToLower() == "Yes")
-                return new YesFactory();
+            if (factoryType.ToLower() == "No")
+                return new NoFactory();
 
-            return new NoFactory();
+            return new YesFactory();
         }
     }
 }

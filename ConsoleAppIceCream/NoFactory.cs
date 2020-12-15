@@ -9,7 +9,7 @@ namespace ConsoleAppIceCream
     {
         public override ISize GetSize(string sizeType)
         {
-            if (sizeType.ToLower() == "medium")
+            if (sizeType.ToLower() == "Medium")
                 return new Medium();
 
             return null;

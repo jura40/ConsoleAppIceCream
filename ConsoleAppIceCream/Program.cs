@@ -9,30 +9,30 @@ namespace ConsoleAppIceCream
         {
             var user = new Customer();
 
-            user.SetCommandOption(1 /*Add command*/);
-            user.SetIceCream(new IceCream("Dining table", 1500, 2));
+            user.SetCommandOption(1); //add
+            user.SetIceCream(new IceCream("Chokolade", 20, 2));
             user.RunCommand();
 
-            user.SetCommandOption(1 /*Add command*/);
-            user.SetIceCream(new IceCream("dishwasher", 6000, 3));
-            user.RunCommand();
-            user.ShowOrder();
-
-            SetSize("Yes", "Medium");
-
-            user.SetCommandOption(2 /*Redo command*/);
+            user.SetCommandOption(1); //add
+            user.SetIceCream(new IceCream("Vanile", 30, 3));
             user.RunCommand();
             user.ShowOrder();
 
-            SetSize("Yes", "Big");
+            SetSize("yes", "Medium");
 
-            user.SetCommandOption(3 /*Undo command*/);
+            user.SetCommandOption(2 ); //redo
             user.RunCommand();
             user.ShowOrder();
 
-            SetSize("Yes", "Smal");
+            SetSize("yes", "Big");
 
-            user.SetCommandOption(4 /*Clear command*/);
+            user.SetCommandOption(3); //undo
+            user.RunCommand();
+            user.ShowOrder();
+
+            SetSize("yes", "Smal");
+
+            user.SetCommandOption(4); //clear
             user.RunCommand();
             user.ShowOrder();
 
