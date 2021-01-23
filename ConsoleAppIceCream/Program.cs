@@ -39,10 +39,10 @@ namespace ConsoleAppIceCream
             Console.ReadLine();
         }
 
-        private static void SetSize(string sizeType, string bankCard)
+        private static void SetSize(string topping, string sizeType)
         {
-            var type = SizeFactory.CreateSizeFactory(sizeType);
-            var sort = type.GetSize(bankCard);
+            var type = SizeFactory.CreateSizeFactory(topping);
+            var sort = type.GetSize(sizeType);
             Console.WriteLine(sort.Size() + "\n----------------------------------");
         }
     }

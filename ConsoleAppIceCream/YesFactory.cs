@@ -17,8 +17,10 @@ namespace ConsoleAppIceCream.Factory.ConcreteFactory
             {
                 return new Big();
             }
-
-            return null;
+            else
+            {
+                return new Medium();
+            }
         }
     }
 }
